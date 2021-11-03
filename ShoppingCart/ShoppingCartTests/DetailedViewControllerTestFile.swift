@@ -40,7 +40,8 @@ class DetailedViewControllerTestFile: XCTestCase {
     
     func testButtonTitle() {
         let title = aDetailedViewController.getButtonTitle()
-        XCTAssertEqual(title, "Add To Cart")
+        XCTAssertEqual(title, "Add To Cart")        
     }
+    
 
 }

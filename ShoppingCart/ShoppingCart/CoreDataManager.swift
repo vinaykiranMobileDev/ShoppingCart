@@ -12,7 +12,6 @@ import UIKit
 final class CoreDataManager {
     static let shared = CoreDataManager()
     private init() {
-        
     }
     
     let aContext:NSManagedObjectContext = {

@@ -50,6 +50,12 @@
 		AE65118B2732FA7500E90312 /* MyCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65118A2732FA7500E90312 /* MyCartCell.swift */; };
 		AE6511902732FAD800E90312 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65118F2732FAD800E90312 /* UtilityManager.swift */; };
 		AE6511952732FB4900E90312 /* ExtensionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6511942732FB4900E90312 /* ExtensionHelper.swift */; };
+		AE65119E2733026C00E90312 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65118F2732FAD800E90312 /* UtilityManager.swift */; };
+		AE6511A22733026D00E90312 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65118F2732FAD800E90312 /* UtilityManager.swift */; };
+		AE6511A62733028300E90312 /* ExtensionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6511942732FB4900E90312 /* ExtensionHelper.swift */; };
+		AE6511AA2733028400E90312 /* ExtensionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6511942732FB4900E90312 /* ExtensionHelper.swift */; };
+		AE6511AE2733029300E90312 /* MyCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65118A2732FA7500E90312 /* MyCartCell.swift */; };
+		AE6511B22733029300E90312 /* MyCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65118A2732FA7500E90312 /* MyCartCell.swift */; };
 		AE71BD472731E97F0016DADF /* MyCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71BD462731E97F0016DADF /* MyCartVC.swift */; };
 		AE71BD4C2731E9B10016DADF /* MyCartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71BD4B2731E9B10016DADF /* MyCartInteractor.swift */; };
 		AE71BD512731E9D20016DADF /* MyCartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71BD502731E9D20016DADF /* MyCartPresenter.swift */; };
@@ -542,9 +548,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE6511532732F28D00E90312 /* MyCartVC.swift in Sources */,
+				AE65119E2733026C00E90312 /* UtilityManager.swift in Sources */,
 				AE6511392732F1AF00E90312 /* DetailedViewControllerTestFile.swift in Sources */,
 				AE86879E2731AADB00E57D80 /* ShoppingCartTests.swift in Sources */,
 				AE65114E2732F28D00E90312 /* MyCartInteractor.swift in Sources */,
+				AE6511A62733028300E90312 /* ExtensionHelper.swift in Sources */,
 				AE6511522732F28D00E90312 /* InventoryVC.swift in Sources */,
 				AE6511452732F27200E90312 /* InventoryModels.swift in Sources */,
 				AE6511572732F28D00E90312 /* MyCartPresenter.swift in Sources */,
@@ -560,6 +568,7 @@
 				AE6511562732F28D00E90312 /* CartData+CoreDataProperties.swift in Sources */,
 				AE6511542732F28D00E90312 /* DetailedViewRouter.swift in Sources */,
 				AE6511792732F4BD00E90312 /* AppDelegate.swift in Sources */,
+				AE6511AE2733029300E90312 /* MyCartCell.swift in Sources */,
 				AE6511712732F4A300E90312 /* CoreDataManager.swift in Sources */,
 				AE6511552732F28D00E90312 /* DetailedViewPresenter.swift in Sources */,
 			);
@@ -570,12 +579,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE6511412732F26800E90312 /* DetailedViewController.swift in Sources */,
+				AE6511AA2733028400E90312 /* ExtensionHelper.swift in Sources */,
 				AE6511672732F28E00E90312 /* DetailedViewPresenter.swift in Sources */,
 				AE8687A92731AADB00E57D80 /* ShoppingCartUITests.swift in Sources */,
 				AE6511752732F4A400E90312 /* CoreDataManager.swift in Sources */,
+				AE6511A22733026D00E90312 /* UtilityManager.swift in Sources */,
 				AE65116D2732F28E00E90312 /* InventoryPresenter.swift in Sources */,
 				AE6511492732F27300E90312 /* InventoryModels.swift in Sources */,
 				AE6511692732F28E00E90312 /* MyCartPresenter.swift in Sources */,
+				AE6511B22733029300E90312 /* MyCartCell.swift in Sources */,
 				AE65115F2732F28E00E90312 /* CartData+CoreDataClass.swift in Sources */,
 				AE65117D2732F4BE00E90312 /* AppDelegate.swift in Sources */,
 				AE6511682732F28E00E90312 /* CartData+CoreDataProperties.swift in Sources */,
