@@ -24,9 +24,9 @@ class InventoryVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presentor?.startFetchingUserData()
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Cart", style: .plain, target: self, action: #selector(moveToCart))
-        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "Home"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "cart"), style: .plain, target: self, action: #selector(moveToCart))
     }
     
     override func viewWillLayoutSubviews() {

@@ -52,8 +52,8 @@ class DetailedViewController: UIViewController {
         }
         
         self.addToCartButton.layer.cornerRadius = 10
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Cart", style: .plain, target: self, action: #selector(moveToCart))
+                
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "cart"), style: .plain, target: self, action: #selector(moveToCart))
         self.updateButtonTitle()
     }
     
