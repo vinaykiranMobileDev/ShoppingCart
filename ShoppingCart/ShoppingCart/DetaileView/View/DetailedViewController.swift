@@ -75,6 +75,6 @@ class DetailedViewController: UIViewController {
 
 extension DetailedViewController: DetailedViewProtocol {
     func upatedSavedState() {
-     //To do
+        self.updateButtonTitle()
     }
 }

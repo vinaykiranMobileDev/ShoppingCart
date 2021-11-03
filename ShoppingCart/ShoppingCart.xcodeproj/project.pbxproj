@@ -47,6 +47,9 @@
 		AE6511752732F4A400E90312 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71BD6C2731F8600016DADF /* CoreDataManager.swift */; };
 		AE6511792732F4BD00E90312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8687832731AAD900E57D80 /* AppDelegate.swift */; };
 		AE65117D2732F4BE00E90312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8687832731AAD900E57D80 /* AppDelegate.swift */; };
+		AE65118B2732FA7500E90312 /* MyCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65118A2732FA7500E90312 /* MyCartCell.swift */; };
+		AE6511902732FAD800E90312 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65118F2732FAD800E90312 /* UtilityManager.swift */; };
+		AE6511952732FB4900E90312 /* ExtensionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6511942732FB4900E90312 /* ExtensionHelper.swift */; };
 		AE71BD472731E97F0016DADF /* MyCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71BD462731E97F0016DADF /* MyCartVC.swift */; };
 		AE71BD4C2731E9B10016DADF /* MyCartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71BD4B2731E9B10016DADF /* MyCartInteractor.swift */; };
 		AE71BD512731E9D20016DADF /* MyCartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71BD502731E9D20016DADF /* MyCartPresenter.swift */; };
@@ -95,6 +98,9 @@
 /* Begin PBXFileReference section */
 		AE6511332732E55000E90312 /* InventoryAssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryAssetCell.swift; sourceTree = "<group>"; };
 		AE6511382732F1AF00E90312 /* DetailedViewControllerTestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewControllerTestFile.swift; sourceTree = "<group>"; };
+		AE65118A2732FA7500E90312 /* MyCartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartCell.swift; sourceTree = "<group>"; };
+		AE65118F2732FAD800E90312 /* UtilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityManager.swift; sourceTree = "<group>"; };
+		AE6511942732FB4900E90312 /* ExtensionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelper.swift; sourceTree = "<group>"; };
 		AE71BD462731E97F0016DADF /* MyCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartVC.swift; sourceTree = "<group>"; };
 		AE71BD4B2731E9B10016DADF /* MyCartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartInteractor.swift; sourceTree = "<group>"; };
 		AE71BD502731E9D20016DADF /* MyCartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartPresenter.swift; sourceTree = "<group>"; };
@@ -169,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				AE71BD462731E97F0016DADF /* MyCartVC.swift */,
+				AE65118A2732FA7500E90312 /* MyCartCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,6 +301,8 @@
 				AE8687942731AADA00E57D80 /* Info.plist */,
 				AE86878C2731AADA00E57D80 /* ShoppingCart.xcdatamodeld */,
 				AE71BD6C2731F8600016DADF /* CoreDataManager.swift */,
+				AE65118F2732FAD800E90312 /* UtilityManager.swift */,
+				AE6511942732FB4900E90312 /* ExtensionHelper.swift */,
 			);
 			path = ShoppingCart;
 			sourceTree = "<group>";
@@ -509,18 +518,21 @@
 				AE8687D12731B00200E57D80 /* InventoryPresenter.swift in Sources */,
 				AE7805732731D8340052B8C6 /* DetailedViewController.swift in Sources */,
 				AE71BD652731ED420016DADF /* CartData+CoreDataProperties.swift in Sources */,
+				AE65118B2732FA7500E90312 /* MyCartCell.swift in Sources */,
 				AE71BD512731E9D20016DADF /* MyCartPresenter.swift in Sources */,
 				AE8687DB2731B03500E57D80 /* InventoryModels.swift in Sources */,
 				AE71BD6D2731F8600016DADF /* CoreDataManager.swift in Sources */,
 				AE8687C72731AC0100E57D80 /* InventoryVC.swift in Sources */,
 				AE7805782731D88D0052B8C6 /* DetailedViewInteractor.swift in Sources */,
 				AE7805582731CA880052B8C6 /* RestClient.swift in Sources */,
+				AE6511952732FB4900E90312 /* ExtensionHelper.swift in Sources */,
 				AE8687D62731B01D00E57D80 /* InventoryInteractor.swift in Sources */,
 				AE8687C22731ABD200E57D80 /* InventoryRouter.swift in Sources */,
 				AE8687842731AAD900E57D80 /* AppDelegate.swift in Sources */,
 				AE71BD642731ED420016DADF /* CartData+CoreDataClass.swift in Sources */,
 				AE8687862731AAD900E57D80 /* SceneDelegate.swift in Sources */,
 				AE86878E2731AADA00E57D80 /* ShoppingCart.xcdatamodeld in Sources */,
+				AE6511902732FAD800E90312 /* UtilityManager.swift in Sources */,
 				AE7805822731D8BD0052B8C6 /* DetailedViewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -738,6 +750,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShoppingCart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -756,6 +769,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShoppingCart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -56,21 +56,6 @@ class InventoryVC: UIViewController {
         guard let aNavVC = self.navigationController else { return }
         self.presentor?.moveToCartsVC(aNavVC)
     }
-    
-    private func read(fromDocumentsWithFileName fileName: String) -> Data? {
-        let fileManager = FileManager.default
-        do {
-            let documentDirectory = try fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor:nil, create:false)
-            let fileURL = documentDirectory.appendingPathComponent(fileName)
-            
-            let aData = try? Data(contentsOf: fileURL)
-            return aData
-        } catch {
-            print(error)
-        }
-        
-        return nil
-    }
 }
 
 extension InventoryVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -95,7 +80,7 @@ extension InventoryVC: UICollectionViewDataSource, UICollectionViewDelegate, UIC
             asset.imageDownloadState = .waiting
         }
         
-        if let aImageData = self.read(fromDocumentsWithFileName: aID){
+        if let aImageData = UtilityManager.read(fromDocumentsWithFileName: aID){
             asset.imageData = aImageData
             asset.imageDownloadState = .completed
         } else if self.shouldDownloadImage(asset) {
@@ -149,8 +134,6 @@ extension InventoryVC: UICollectionViewDataSource, UICollectionViewDelegate, UIC
             return false
         }
     }
-    
-    
 }
 
 
@@ -186,19 +169,3 @@ extension InventoryVC : ViewProtocol {
     }
 }
 
-
-
-
-extension UIWindow {
-    static var isLandscape: Bool {
-        if #available(iOS 13.0, *) {
-            return UIApplication.shared.windows
-                .first?
-                .windowScene?
-                .interfaceOrientation
-                .isLandscape ?? false
-        } else {
-            return UIApplication.shared.statusBarOrientation.isLandscape
-        }
-    }
-}

@@ -46,26 +46,11 @@ class InventoryInteractor: InteractorProtocol {
         RestClient().downloadImage(aURL: aURl) { [weak self](result) in
             switch result {
             case .success(let data):
-                let state = self?.saveImageToLocal(name: assetID, data: data)
-                self?.presenter?.onImageDownload(state: state ?? false, assetId: assetID)
+                let state = UtilityManager.saveImageToLocal(name: assetID, data: data)
+                self?.presenter?.onImageDownload(state: state , assetId: assetID)
             case .failure( _):
                 self?.presenter?.onImageDownload(state: false, assetId: assetID)
             }
         }
     }
-    
-    func saveImageToLocal(name: String, data: Data) -> Bool {
-        let fileManager = FileManager.default
-        do {
-            let documentDirectory = try fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor:nil, create:false)
-            let fileURL = documentDirectory.appendingPathComponent(name)
-            try data.write(to: fileURL)
-            return true
-            
-        } catch {
-            print(error)
-            return false
-        }
-    }
-    
 }

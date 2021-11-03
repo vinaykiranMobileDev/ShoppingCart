@@ -302,8 +302,8 @@
             filePath = "ShoppingCart/PrimaryInventory/view/InventoryVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
             landmarkName = "onData(data:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -318,8 +318,8 @@
             filePath = "ShoppingCart/PrimaryInventory/view/InventoryVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "onData(data:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -350,8 +350,8 @@
             filePath = "ShoppingCart/PrimaryInventory/view/InventoryVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -366,8 +366,8 @@
             filePath = "ShoppingCart/PrimaryInventory/view/InventoryVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "shouldDownloadImage(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -382,8 +382,8 @@
             filePath = "ShoppingCart/PrimaryInventory/view/InventoryVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
             landmarkName = "onImageDownload(state:assetId:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -398,8 +398,8 @@
             filePath = "ShoppingCart/PrimaryInventory/view/InventoryVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
             landmarkName = "onData(data:)"
             landmarkType = "7">
             <Locations>
@@ -446,8 +446,8 @@
             filePath = "ShoppingCart/PrimaryInventory/view/InventoryVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
             landmarkName = "onData(data:)"
             landmarkType = "7">
             <Locations>
